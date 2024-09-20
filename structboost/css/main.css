@@ -1,0 +1,169 @@
+/*
+HEADER - 
+SECTION HERO - 
+SECTION DIGITAL - 
+SECTION ART FRONT
+*/
+
+
+/* 
+    HEADER
+*/
+
+header{
+    width: 100%;
+    height: 8.8rem;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(255,255,255,0.24);
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .btn-mobile{
+    display: none;
+}
+
+header nav{
+    display: flex;
+    align-items: center;
+    gap: 3.2rem;
+}
+
+header nav ul{
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+header nav ul li a{
+    color: var(--gray-100);
+    font-size: 1.6rem;
+    letter-spacing: .48px;
+    transition: opacity .3s ease;
+}
+
+header nav ul li a:hover{
+    opacity: .7;
+}
+
+/*
+    SECTION HERO
+*/
+
+.s-hero{
+    width: 100%;
+    padding-top: 11.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+.s-hero::after{
+    content: '';
+    width: 100%;
+    height: 22rem;
+    background-color: var(--pink-10);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
+.s-hero .text{
+    position: relative;
+    width: 100%;
+    max-width: 71.9rem;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.s-hero .text h1{
+    position: relative;
+    font-weight: 600;
+    letter-spacing: -1.68px;
+}
+.s-hero .text .line{
+    margin: 0 auto;
+}
+.s-hero .text p{
+    max-width: 55.6rem;
+    margin: 0 auto;
+    letter-spacing: -.54px;
+    margin-top: 2.4rem;
+    margin-bottom: 3.2rem;
+    color: var(--gray-300);
+}
+.s-hero .text .arrow {
+    position: absolute;
+    left: 5.5rem;
+    bottom: 1.7rem;
+}
+.s-hero .ilustra{
+    padding: 0 1.5rem;
+}
+.s-hero .ilustra-mobile{
+    display: none;
+}
+
+/*
+    SECTION S-DIGITAL
+*/
+.s-digital{
+    padding-top: 12.8rem;
+}
+.s-digital h3{
+    text-align: center;
+    max-width: 53.5rem;
+    margin: 0 auto;
+    margin-bottom:6.4rem;
+}
+.s-digital ul{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--gray-800);
+    padding-bottom: 12.8rem;
+}
+
+/*
+    SECTION ART FRONT
+*/
+.s-art-front{
+    padding: 12.8rem 0;
+}
+.s-art-front .title-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 6.4rem;
+}
+.s-art-front .title-text h3{
+    letter-spacing: -1.2px;
+    font-weight: 600;
+}
+.s-art-front .title-text p{
+    color: var(--gray-600);
+    letter-spacing: -0.54px;
+    margin-top: 1.6rem;
+} 
+.s-art-front .title-text .left{
+    max-width: 53.9rem;
+}
+.s-art-front .title-text .left p{
+    max-width: 45.2rem;
+}
+.s-art-front .title-text .right{
+    max-width: 42.9rem;
+}
+.s-art-front .all{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3.2rem;
+}
+.s-art-front .all .card-post:first-child{
+    grid-column: span 2;
+}
