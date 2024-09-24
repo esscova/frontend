@@ -2,16 +2,21 @@
 <html lang="pt-br">
 
 <head>
+    <!-- FONTS GOOGLE -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Sora:wght@100..800&display=swap"
         rel="stylesheet">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <title>StructBoost</title>
 
+    <!-- LIBS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- STYLES -->
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/components.css">
     <link rel="stylesheet" href="./css/grid.css">
@@ -182,8 +187,23 @@
             </div>
         </section>
 
+        <!-- SECTION NEWSLETTER -->
+        <section class="s-newsletter">
+            <div class="container" data-aos="zoom-out">
+            <h2>Front-end descomplicado e direto ao ponto!</h2>
+            <p>Aprenda a desenvolver interfaces modernas e de alta qualidade com quem está na área atuando com projetos altamente renomados</p>
+            <button class="btn-primary white lg">Fazer parte da lista de espera</button>
+            </div>
+        </section>
     </main>
-
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        disable: 'mobile'
+      });
+    </script> 
 </body>
 
 </html>
